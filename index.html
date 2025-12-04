@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Cultural Amador Ballumbrosio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Centro Cultural Amador Ballumbrosio</h1>
+    <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#talleres">Talleres</a></li>
+        <li><a href="#gastronomia">Gastronomía</a></li>
+        <li><a href="#merch">Merch</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- BOTÓN DEL CARRITO -->
+    <div id="cartBtn" class="cart-btn">🛒 <span id="cartCount">0</span></div>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="hero reveal">
+    <img src="img/portada.jpg">
+    <h2>Cultura viva de Chincha y tradición afroperuana</h2>
+</section>
+
+<!-- EVENTOS -->
+<section id="eventos" class="container section reveal">
+    <h2>Eventos</h2>
+    <div class="cards-grid">
+        <div class="card"><img src="img/evento1.jpg"><h3>Noches de Cajón</h3></div>
+        <div class="card"><img src="img/evento2.jpg"><h3>Danza y Festejo</h3></div>
+    </div>
+</section>
+
+<!-- TALLERES -->
+<section id="talleres" class="container section reveal">
+    <h2>Talleres</h2>
+    <div class="cards-grid">
+        <div class="card"><img src="img/taller1.jpg"><h3>Taller de Cajón</h3></div>
+        <div class="card"><img src="img/taller2.jpg"><h3>Zapateo Afroperuano</h3></div>
+    </div>
+</section>
+
+<!-- GASTRONOMÍA -->
+<section id="gastronomia" class="container section reveal">
+    <h2>Gastronomía Afroperuana</h2>
+    <p>Atención: Viernes, Sábado y Domingo — 12:00pm a 6:00pm</p>
+
+    <h3 class="merch-category-title">Platos principales</h3>
+
+    <div class="cards-grid">
+        <div class="card">
+            <img src="img/comida1.jpg">
+            <h3>Carapulcra con Sopa Seca</h3>
+            <p>Precio: S/ 40</p>
+            <p>Tiempo: 15 min</p>
+            <button class="btn-sm add-cart" data-name="Carapulcra con Sopa Seca" data-price="40">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/comida2.jpg">
+            <h3>Seco con Frijoles</h3>
+            <p>Precio: S/ 45</p>
+            <p>Tiempo: 15 min</p>
+            <button class="btn-sm add-cart" data-name="Seco con Frijoles" data-price="45">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/comida3.jpg">
+            <h3>Chancho al Palo</h3>
+            <p>Precio: S/ 40</p>
+            <p>Tiempo: 15 min</p>
+            <button class="btn-sm add-cart" data-name="Chancho al Palo" data-price="40">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <h3 class="merch-category-title" style="margin-top:40px;">Bebidas tradicionales</h3>
+
+    <div class="cards-grid">
+        <div class="card">
+            <img src="img/bebida1.jpg">
+            <h3>Tutuma</h3>
+            <button class="btn-sm add-cart" data-name="Tutuma" data-price="12">Añadir al carrito</button>
+        </div>
+
+        <div class="card">
+            <img src="img/bebida2.jpg">
+            <h3>Bebida de la casa</h3>
+            <button class="btn-sm add-cart" data-name="Bebida de la casa" data-price="10">Añadir al carrito</button>
+        </div>
+    </div>
+</section>
+
+<!-- MERCH -->
+<section id="merch" class="container section reveal">
+    <h2>Merch Cultural</h2>
+    <p>Vestimenta, artesanías, instrumentos y más.</p>
+</section>
+
+<!-- MODAL DEL CARRITO -->
+<div id="cartModal" class="modal-cart">
+    <div class="cart-box">
+        <h2>🛒 Tu carrito</h2>
+        <div id="cartItems"></div>
+        <h3>Total: S/ <span id="totalPrice">0</span></h3>
+        <button id="confirmOrder" class="btn-confirm">Confirmar pedido</button>
+        <button id="closeCart" class="btn-close">Cerrar</button>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<section id="contacto" class="container section reveal">
+    <h2>Contacto</h2>
+    <p>Facebook, Instagram, TikTok, WhatsApp</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
